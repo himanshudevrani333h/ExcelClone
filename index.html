@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-bar" contenteditable="true">Book - 1</div>
+      <div class="menu-bar">
+        <p>File
+          
+        </p>
+        <p>Edit</p>
+        <p>Help</p>
+      </div>
+      <div class="menu-options">
+        <div class="bui">
+          <span class="material-icons"> format_bold </span>
+          <span class="material-icons"> format_italic </span>
+          <span class="material-icons"> format_underlined </span>
+        </div>
+        <div class="font-styles">
+          <select id="cell-font-family">
+            <option value="Arial, sans-serif">Arial, sans-serif</option>
+            <option value="Helvetica, sans-serif">Helvetica, sans-serif</option>
+            <option value="Verdana, sans-serif">Verdana, sans-serif</option>
+            <option value="Trebuchet MS, sans-serif">Trebuchet MS, sans-serif</option>
+            <option value="Andale Mono, monospace">Andale Mono, monospace</option>
+          </select>
+          <select id="cell-font-size">
+            <option value="10">10</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="18">18</option>
+            <option value="24">20</option>
+          </select>
+        </div>
+        <div class="alignment">
+          <span class="material-icons"> format_align_left </span>
+          <span class="material-icons"> format_align_center </span>
+          <span class="material-icons"> format_align_right </span>
+        </div>
+        <div class="colors">
+          <div class="material-icons font-fill"> format_color_text 
+            <input class = "font-text" type="color"/>
+          </div>
+          <div class="material-icons bg-fill"> format_color_fill 
+            <input class = "font-bg" type="color"/>
+          </div>
+        </div>
+      </div>
+      <div class="formula-bar">
+        <input id="select-cell" /><input id="complete-formula"  placeholder="Formula Bar"/>
+      </div>
+      <div class="grid">
+        <div class="blank-corner"></div>
+        <div class="column-tags"></div>
+        <div class="row-numbers"></div>
+      </div>
+      <div class="sheets-bar">
+        <div>Sheets - 1</div>
+      </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+    crossorigin="anonymous"
+  ></script>
+    <script src="script.js"></script>
+    <script src="StyleScript.js"></script>
+    <script src="scrollScript.js"></script>
+  </body>
+</html>
